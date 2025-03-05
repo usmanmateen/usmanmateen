@@ -1,36 +1,36 @@
-# 👋 Hello World! I'm Usman 👨‍💻
+# 👋 Hey there! I'm Usman 👨‍💻  
 
-I'm a passionate and curious software developer currently pursuing a degree at Coventry University. I'm on a journey to turn lines of code into meaningful solutions.
+I'm a **software developer & entrepreneur** passionate about building **scalable, AI-driven, and high-impact solutions**. Currently pursuing a **Computer Science degree at Coventry University**, I'm on a mission to turn **code into innovation** and **ideas into reality**.  
 
-## 💻 Technologies & Tools
+🔗 **Portfolio:** [usmanmateen.com](https://usmanmateen.com)  
 
-- **Languages:** Python, C++, SQL, HTML, CSS, Swift, Javascript
-- **Frameworks:** Flask
-- **Cloud:** AWS
-- **Tools:** Ngrok
+## 💻 Tech Stack & Tools  
 
-## 🚀 What I Do
+- 🚀 **Languages:** Python, C++, SQL, JavaScript (ES6+), Swift, HTML, CSS  
+- ⚡ **Frameworks & Libraries:** Flask, FastAPI, React, Tailwind CSS  
+- ☁️ **Cloud & DevOps:** AWS, Supabase, Docker, CI/CD  
+- 🛠️ **Tools & Integrations:** Ngrok, Stripe, OpenAI API, Firebase  
 
-As a fast learner, I thrive in dynamic environments where innovation is at the forefront. My GitHub repositories reflect my commitment to clean, efficient, and well-documented code. From Python's versatility to the efficiency of C++, and the creativity of Swift, I love pushing the boundaries of what's possible.
+## 🚀 What I Do  
 
-## ☁️ Cloud & Web Development
+I thrive in **fast-paced, innovative environments** where technology solves **real-world problems**. My focus spans from **AI-powered automation** to **scalable SaaS solutions**. Whether it's the **efficiency of Python**, the **performance of C++**, or **the interactivity of JavaScript**, I'm always looking to push the boundaries.  
 
-I have hands-on experience with AWS, and I leverage Flask for web development along with Ngrok for secure tunneling. Navigating the cloud and creating seamless web experiences are some of my favorite challenges.
+## 📂 Featured Projects  
 
-## 📂 My Projects
+- 🔹 [**GrabStays**](https://grabstays.com) – AI-powered **Airbnb pricing & review automation** for hosts. (Ongoing)  
+- 🔹 [**Ezcarz**](https://ezcarz.co.uk) – **Car dealership platform** offering smart inventory & pricing automation.  
+- 🔹 [**Full Stack MRP FloatFry**](https://github.com/usmanmateen/JustInTime) – A complete **Material Requirements Planning (MRP) system**.  
+- 🔹 [**Discord Flight Tracker**](https://github.com/usmanmateen/Flight_Tracker) – Real-time **flight tracking integrated with Discord**.  
+- 🔹 [**Text-based C++ Game**](https://github.com/usmanmateen/Text-based-C-game) – A classic **text-based adventure game** in C++.  
 
-Here are some of my notable projects:
+## 🌍 Beyond Coding  
 
-- [Full Stack MRP FloatFry](https://github.com/usmanmateen/JustInTime): Developed a comprehensive MRP system for FloatFry at Coventry University.
-- [Discord Flight Tracker](https://github.com/usmanmateen/Flight_Tracker): Real-time flight tracking for Discord.
-- [Text-based C++ game](https://github.com/usmanmateen/Text-based-C-game): An engaging text-based game written in C++.
+When I'm not coding, you’ll find me **exploring emerging tech, contributing to open-source, and building SaaS products**. I believe in **leveraging AI, automation, and cloud computing** to create **scalable solutions that make an impact**.  
 
-## 🌐 Beyond Coding
+## 📫 Let's Connect!  
 
-Outside of coding, you can find me exploring the latest tech trends, contributing to open-source projects, and collaborating with like-minded individuals. I believe in the power of technology to make a positive impact on the world, and I'm excited to be part of that journey.
+- 💼 **Portfolio:** [usmanmateen.com](https://usmanmateen.com)  
+- 🔗 **LinkedIn:** [linkedin.com/in/usmanmateen/](https://www.linkedin.com/in/usmanmateen/)  
+- 💬 **GitHub:** [github.com/usmanmateen](https://github.com/usmanmateen/)  
 
-## 📫 Let's Connect!
-
-Feel free to explore my repositories, share your thoughts, or reach out for collaboration. Together, let's code a better future!
-
-Contact me via [LinkedIn](https://www.linkedin.com/in/usmanmateen/) for professional networking and collaboration.
+Let's **collaborate** and build something **awesome**! 🚀  
