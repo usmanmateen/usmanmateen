@@ -1,87 +1,60 @@
-# 👋 Hey, I'm Usman
+# Hi, I'm Usman 👋
 
-**Software Developer • AI Engineer • SaaS Builder**
+**Software Developer · Applied AI Engineer**
 
-I’m a **Junior Software Developer at Energy One** and a **postgraduate student at the University of Warwick**, currently studying **MSc Applied Artificial Intelligence**. I previously graduated with a **First-Class BSc in Computer Science with AI from Coventry University**.
+Software Developer at **[Energy One](https://www.energyone.com/)** building enterprise energy-trading systems, and an MSc Applied AI candidate at the **University of Warwick (WMG)**. I work across LLM systems, RAG pipelines, backend engineering and cloud deployment — turning operational problems into reliable, well-evaluated technical solutions.
 
-I build **AI-powered systems**, automation tools, and SaaS products — combining machine learning, backend engineering, and cloud infrastructure to turn real-world problems into clean technical solutions.
-
-🔗 **Portfolio:** https://usmanmateen.com  
+🔗 **[usmanmateen.com](https://usmanmateen.com)** · 💼 **[LinkedIn](https://linkedin.com/in/usmanmateen)** · ✉️ jobs@usmanmateen.com
 
 ---
 
-## 🎓 Education
+### What I work on
 
-### **MSc Applied Artificial Intelligence — University of Warwick (WMG)**  
-*Current postgraduate student (2025 intake)*  
-Focus areas: Applied machine learning, AI automation, research methods, data-driven decision systems, agentic workflows.
-
-### **BSc Computer Science with Artificial Intelligence — Coventry University**  
-*Graduated with First-Class Honours*  
-Dissertation: Predictive analytics in energy trading using machine learning and real-time market data.
+- **Applied AI** — LLM systems, RAG pipelines, prompt-injection guardrails, model evaluation and explainability
+- **Backend engineering** — Python, C#/.NET, FastAPI, REST APIs, SQL, systems integration
+- **Cloud & delivery** — GCP Cloud Run, AWS, Docker, CI/CD, Azure DevOps
+- **Responsible AI** — governance, bias evaluation, safe deployment, human oversight
 
 ---
 
-## 💼 Professional Experience
+### 🚀 Selected projects
 
-### **Junior Software Developer — Energy One (UK)**
-Enterprise energy-trading software (C#, .NET, SQL Server).  
-- Migrating legacy workers to **Hangfire** for modern job scheduling.  
-- Building an internal **AI knowledge assistant** (RAG over codebase + Confluence).  
-- Working with large-scale systems, CI/CD pipelines, and ISO 27001-aligned practices.  
-- Experience across backend development, support workflows, and performance optimisation.
+**[SentryML](https://github.com/usmanmateen) — LLM Guardrail & AI Security System**
+An AI firewall that detects LLM prompt-injection attacks. Semantic detection plus an optional fine-tuned DistilBERT classifier, ~95% detection accuracy on benchmarking across prompt injection, jailbreak, role hijacking and data-exfiltration. FastAPI inference on GCP Cloud Run with Firestore, SHAP explainability, a React monitoring dashboard, and published Python & JavaScript SDKs.
+`Python` `FastAPI` `GCP Cloud Run` `Firestore` `DistilBERT` `SHAP` `React`
 
----
+**Enterprise RAG Evaluation — MSc Dissertation**
+An evaluation framework comparing sparse (BM25), dense and hybrid (RRF) retrieval with cross-encoder reranking on an enterprise financial-document benchmark. Measures groundedness, source attribution and hallucination risk, with failure analysis across retrieval and generation stages to recommend reliable deployment configurations.
+`Python` `RAG` `BM25` `Dense Retrieval` `Reranking` `LLM Evaluation`
 
-## 🧠 Tech Stack
+**Migrayt — Enterprise SaaS Migration Platform**
+A multi-tenant SaaS platform automating enterprise workflow migration between Azure DevOps and Jira. Connector-based architecture handling cross-platform data movement, transformation and sanitisation, with tenant isolation and access controls.
+`AWS` `Multi-tenant SaaS` `Connectors` `CI/CD`
 
-**Languages:** Python, C++, JavaScript (ES6+), SQL, Swift, HTML/CSS  
-**FrameworkFrameworks:** Flask, FastAPI, React, Tailwind, .NET Core  
-**Cloud & DevOps:** AWS, Docker, Supabase, CI/CD, GitHub Actions  
-**AI & Tools:** OpenAI API, Hugging Face, LangChain, Stripe, Ngrok, Firebase  
-
----
-
-## 🚀 Featured Projects
-
-### 🔹 GrabStays  
-A **student-only subletting platform** designed to eliminate scams and unsafe listings.  
-Verified **.ac.uk email access**, secure room listings, and automatically generated legal contracts.  
-https://grabstays.com  
-
-### 🔹 Ezcarz  
-A modern car dealership platform providing **smart inventory management**, automated pricing tools, and a streamlined seller workflow.  
-https://ezcarz.co.uk  
-
-### 🔹 FloatFry — Full Stack MRP System  
-A complete Material Requirements Planning system with forecasting, scheduling, production logic, and a Flask-based backend.  
-https://github.com/usmanmateen/JustInTime  
-
-### 🔹 Discord Flight Tracker  
-Real-time aviation tracking integrated directly into Discord channels.  
-https://github.com/usmanmateen/Flight_Tracker  
-
-### 🔹 Text-Based C++ Game  
-A classic console adventure game built entirely in C++.  
-https://github.com/usmanmateen/Text-based-C-game  
+**Paggio — Webhook Debugging & Replay Tool**
+A developer tool for diagnosing webhook failures — inspecting requests, reviewing payloads, isolating faults and replaying deliveries. Owned end to end from API design through testing and documentation.
+`API Design` `Webhooks` `Developer Tooling`
 
 ---
 
-## 🌍 Beyond Coding
+### 🛠️ Tech stack
 
-Outside of work and studies, I focus on:  
-- Building automation-first SaaS products  
-- AI agents and enterprise knowledge systems  
-- Experimenting with open-source LLMs  
-- Improving my backend engineering & DevOps skills  
-
-I enjoy shipping fast, learning continuously, and building tools that make people’s lives easier.
+**Languages** — Python · TypeScript · JavaScript · SQL · C#
+**AI & ML** — LLM APIs · RAG · embeddings · DistilBERT fine-tuning · model evaluation · SHAP · responsible AI
+**Backend & data** — FastAPI · REST APIs · SQL Server · PostgreSQL · data pipelines · webhooks
+**Cloud & DevOps** — GCP (Cloud Run, Firestore) · AWS · Docker · Azure DevOps · CI/CD · Git
+**Frameworks** — React · Node.js · Next.js · .NET · ASP.NET
 
 ---
 
-## 📫 Connect
+### 🎓 Education
 
-**Portfolio:** https://usmanmateen.com  
-**LinkedIn:** https://linkedin.com/in/usmanmateen  
-**GitHub:** https://github.com/usmanmateen  
+**MSc Applied Artificial Intelligence** — University of Warwick (WMG) · 2025–2026
+Responsible AI, AI governance, risk assessment, explainability and LLM evaluation.
 
+**BSc Computer Science with Artificial Intelligence** — Coventry University · First-Class Honours
+Programming & Algorithms (91%), OOP (87%), Software Engineering (82%).
+
+---
+
+<sub>📫 Open to conversations about applied AI and backend engineering — reach me at jobs@usmanmateen.com</sub>
