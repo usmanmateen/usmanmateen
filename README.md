@@ -2,7 +2,7 @@
 
 **Software Developer · Applied AI Engineer**
 
-Software Developer at **[Energy One](https://www.energyone.com/)** building enterprise energy-trading systems, and an MSc Applied AI candidate at the **University of Warwick (WMG)**. I work across LLM systems, RAG pipelines, backend engineering and cloud deployment — turning operational problems into reliable, well-evaluated technical solutions.
+Software Developer at **Energy One** building enterprise energy-trading systems, and an MSc Applied AI candidate at the **University of Warwick (WMG)**. I work across LLM systems, RAG pipelines, backend engineering and cloud deployment — turning operational problems into reliable, well-evaluated technical solutions.
 
 🔗 **[usmanmateen.com](https://usmanmateen.com)** · 💼 **[LinkedIn](https://linkedin.com/in/usmanmateen)** · ✉️ jobs@usmanmateen.com
 
