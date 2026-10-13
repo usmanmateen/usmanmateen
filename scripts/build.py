@@ -213,13 +213,13 @@ def header(t: dict, counts: dict) -> str:
         f"<defs>{clip(w, h)}{blobs}</defs>{mesh}{grid(w, h, t)}"
         f'<text x="64" y="86" class="m" font-size="15" font-weight="600" letter-spacing="3" fill="{t["acc_ink"]}">AI ENGINEER · BIRMINGHAM, UK</text>'
         f'<text x="62" y="152" class="d" font-size="58" font-weight="700" letter-spacing="-1.6" fill="{t["text"]}">Muhammad Usman Mateen</text>'
-        f'<text x="64" y="200" class="s" font-size="34" fill="{t["muted"]}">I build and ship production AI.</text>'
-        f'<rect x="64" y="226" width="372" height="36" rx="18" fill="{t["surface"]}" stroke="{t["line"]}" stroke-width="2"/>'
+        f'<text x="64" y="200" class="s" font-size="34" fill="{t["muted"]}">I build and ship production AI and automation.</text>'
+        f'<rect x="64" y="226" width="474" height="36" rx="18" fill="{t["surface"]}" stroke="{t["line"]}" stroke-width="2"/>'
         f'<circle cx="86" cy="244" r="6" fill="{t["sig"]}"/>'
-        f'<text x="102" y="250" class="b" font-size="15" font-weight="600" fill="{t["sig_ink"]}">Open to mid-level AI / applied-AI roles</text>'
+        f'<text x="102" y="250" class="b" font-size="15" font-weight="600" fill="{t["sig_ink"]}">Open to mid-level AI / applied-AI / automation roles</text>'
         + receipt
     )
-    return svg(w, h, body, t, "Muhammad Usman Mateen, AI Engineer. I build and ship production AI.",
+    return svg(w, h, body, t, "Muhammad Usman Mateen, AI Engineer. I build and ship production AI and automation.",
                ["Space Grotesk", "Inter", "JetBrains Mono", "Instrument Serif"])
 
 
@@ -325,6 +325,209 @@ def activity(t: dict, cal: dict) -> str:
     return svg(w, h, body, t, f"{cal['totalContributions']} contributions in the last year.", ["Inter", "JetBrains Mono"])
 
 
+# ── Hero cards (the workbench from usmanmateen.com) ──────────────────────────
+
+BARCODE = [2, 1, 1, 3, 1, 2, 1, 1, 2, 3, 1, 1, 2, 1, 3, 1, 1, 2, 2, 1, 1, 3, 1, 2, 1, 3, 1, 1, 2, 1, 2, 1, 3, 1, 1, 2]
+INK, MUTED, DIM, PAPER_LINE = "#16161d", "#585b6b", "#6b6e7c", "rgba(23,23,42,0.14)"
+
+
+def barcode(x: float, y: float, w: float, h: float, color: str) -> str:
+    unit = w / (sum(BARCODE) * 1.6)
+    out, cx = "", x
+    for i, n in enumerate(BARCODE):
+        if i % 2 == 0:
+            out += f'<rect x="{cx:.1f}" y="{y}" width="{n * unit:.1f}" height="{h}" fill="{color}"/>'
+        cx += n * unit * 1.6
+    return out
+
+
+def tilt(x: float, y: float, w: float, h: float, rot: float, inner: str) -> str:
+    return f'<g transform="rotate({rot} {x + w / 2} {y + h / 2})" filter="url(#shadow)">{inner}</g>'
+
+
+def panel(x, y, w, h, fill, stroke=PAPER_LINE, rx=16) -> str:
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}" stroke-width="2"/>'
+
+
+def text(x, y, s, cls, size, fill, weight=None, anchor=None, spacing=None) -> str:
+    attrs = f'x="{x}" y="{y}" class="{cls}" font-size="{size}" fill="{fill}"'
+    if weight:
+        attrs += f' font-weight="{weight}"'
+    if anchor:
+        attrs += f' text-anchor="{anchor}"'
+    if spacing:
+        attrs += f' letter-spacing="{spacing}"'
+    return f"<text {attrs}>{esc(s)}</text>"
+
+
+def id_badge(photo: str) -> str:
+    x, y, w, h = 56, 104, 250, 316
+    strap = (f'<rect x="{x + 106}" y="-20" width="38" height="{y + 2}" fill="#6366f1"/>'
+             f'<rect x="{x + 101}" y="{y - 22}" width="48" height="26" rx="6" fill="#9aa0b5"/>')
+    inner = (panel(x, y, w, h, "#ffffff")
+             + f'<path d="M{x} {y + 16}a16 16 0 0 1 16-16h{w - 32}a16 16 0 0 1 16 16v38h-{w}z" fill="#6366f1"/>'
+             + text(x + 18, y + 34, "DEVELOPER ID", "m", 13, "#ffffff", 700, spacing=2)
+             + text(x + w - 18, y + 35, "UM.", "d", 17, "#ffffff", 700, anchor="end")
+             + f'<clipPath id="ph"><rect x="{x + 18}" y="{y + 72}" width="104" height="120" rx="10"/></clipPath>'
+             + f'<image href="{photo}" x="{x + 18}" y="{y + 72}" width="104" height="120" preserveAspectRatio="xMidYMid slice" clip-path="url(#ph)"/>'
+             + text(x + 136, y + 92, "Usman", "d", 20, INK, 700)
+             + text(x + 136, y + 115, "Mateen", "d", 20, INK, 700)
+             + text(x + 136, y + 138, "AI ENGINEER", "m", 12, "#4f46e5", 700, spacing=1.5)
+             + text(x + 136, y + 160, "LLM · RAG ·", "b", 12.5, MUTED)
+             + text(x + 136, y + 194, "systems", "b", 12.5, MUTED)
+             + text(x + 136, y + 177, "Production", "b", 12.5, MUTED)
+             + f'<circle cx="{x + 24}" cy="{y + 215}" r="4.5" fill="#10b981"/>'
+             + text(x + 36, y + 220, "Birmingham, UK", "m", 12.5, MUTED)
+             + barcode(x + 18, y + 238, 214, 36, INK)
+             + text(x + w / 2, y + 296, "USMANMATEEN.COM", "m", 11, DIM, anchor="middle", spacing=2))
+    return f'<g transform="rotate(-4 {x + w / 2} {y + h / 2})">{strap}<g filter="url(#shadow)">{inner}</g></g>'
+
+
+def education() -> str:
+    x, y, w, h = 344, 60, 290, 192
+    inner = (panel(x, y, w, h, "#ffffff")
+             + text(x + 20, y + 32, "EDUCATION", "m", 12, DIM, 600, spacing=2)
+             + text(x + 20, y + 62, "MSc Applied AI", "d", 19, INK, 700)
+             + text(x + 20, y + 82, "Warwick (WMG) · awaiting results", "m", 12, MUTED)
+             + text(x + 20, y + 114, "BSc CS with AI · First-Class", "d", 19, INK, 700)
+             + text(x + 20, y + 134, "Coventry University", "m", 12, MUTED)
+             + f'<path d="M{x + 20} {y + 150}H{x + w - 20}" stroke="{PAPER_LINE}"/>'
+             + text(x + 20, y + 174, "EN · UR · PT (spoken)", "m", 12, DIM))
+    return tilt(x, y, w, h, 1.5, inner)
+
+
+def receipt(prs: list[dict], counts: dict) -> str:
+    x, y, w, h = 668, 34, 250, 366
+    merged = [p for p in prs if p["status"] == "merged"]
+    latest = sorted(merged, key=lambda p: p["mergedAt"], reverse=True)[:4]
+    teeth = "".join(f"L{x + w - 10 * (k + 1) + 5} {y + h + (6 if k % 2 == 0 else 0)}" for k in range(25))
+    body = (f'<path d="M{x} {y}H{x + w}V{y + h}{teeth}L{x} {y + h}Z" fill="#fffdf8" stroke="{PAPER_LINE}" stroke-width="2"/>'
+            + text(x + w / 2, y + 46, "OPEN SOURCE", "d", 27, INK, 700, anchor="middle")
+            + text(x + w / 2, y + 68, "PULL REQUESTS", "m", 11, DIM, anchor="middle", spacing=2)
+            + text(x + w / 2, y + 88, f"@usmanmateen · {counts['date']}", "m", 11, DIM, anchor="middle")
+            + f'<path d="M{x + 18} {y + 104}H{x + w - 18}" stroke="#9aa0b5" stroke-dasharray="4 4"/>')
+    for i, p in enumerate(latest):
+        name = p["repository"]["nameWithOwner"].split("/")[1]
+        name = {"msoffcrypto-tool": "msoffcrypto"}.get(name, name)
+        yy = y + 130 + i * 22
+        body += text(x + 20, yy, f"{name} #{p['number']}", "m", 12.5, INK)
+        body += text(x + w - 20, yy, "MERGED", "m", 12, "#8250df", 700, anchor="end")
+    sy = y + 130 + len(latest) * 22 + 2
+    adds = sum(p["additions"] for p in merged)
+    dels = sum(p["deletions"] for p in merged)
+    open_n = counts["review"] + counts["approved"] + counts["queued"]
+    body += (f'<path d="M{x + 18} {sy}H{x + w - 18}" stroke="#9aa0b5" stroke-dasharray="4 4"/>'
+             + text(x + 20, sy + 22, "LINES", "m", 12.5, INK)
+             + f'<text x="{x + w - 20}" y="{sy + 22}" text-anchor="end" class="m" font-size="12.5">'
+             f'<tspan fill="#1a7f37">+{adds:,}</tspan> <tspan fill="#cf222e">−{dels:,}</tspan></text>'
+             + text(x + 20, sy + 42, "MERGED", "m", 12.5, INK)
+             + text(x + w - 20, sy + 42, str(counts["merged"]), "m", 12.5, INK, 700, anchor="end")
+             + text(x + 20, sy + 62, "IN REVIEW", "m", 12.5, INK)
+             + text(x + w - 20, sy + 62, str(open_n), "m", 12.5, INK, 700, anchor="end")
+             + barcode(x + 30, y + h - 58, 190, 26, INK)
+             + text(x + w / 2, y + h - 14, "thank you for shipping", "s", 16, MUTED, anchor="middle"))
+    return tilt(x, y, w, h, -2, body)
+
+
+def terminal() -> str:
+    x, y, w, h = 940, 60, 236, 200
+    caret = (f'<rect x="{x + 18}" y="{y + 170}" width="8" height="13" fill="rgba(255,255,255,0.75)">'
+             f'<animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite" calcMode="discrete"/></rect>')
+    inner = (panel(x, y, w, h, "#11131a", "rgba(255,255,255,0.10)", rx=14)
+             + "".join(f'<circle cx="{x + 20 + k * 16}" cy="{y + 20}" r="5" fill="{c}"/>' for k, c in enumerate(["#ff5f57", "#febc2e", "#28c840"]))
+             + text(x + 72, y + 24, "~/research", "m", 11, "rgba(255,255,255,0.45)")
+             + text(x + 18, y + 56, "$ dissertation --status", "m", 12.5, "#a5b4fc")
+             + text(x + 18, y + 78, "› Hybrid RAG benchmark", "m", 12.5, "#ffffff", 700)
+             + text(x + 18, y + 98, "dense · sparse · KG · visual", "m", 12, "rgba(255,255,255,0.62)")
+             + text(x + 18, y + 118, "# FinanceBench", "m", 12, "rgba(255,255,255,0.62)")
+             + text(x + 18, y + 140, "✓ submitted", "m", 12.5, "#34d399")
+             + text(x + 18, y + 160, "awaiting grades", "m", 12, "rgba(255,255,255,0.62)")
+             + caret)
+    return tilt(x, y, w, h, 2.5, inner)
+
+
+def music(track: dict) -> str:
+    x, y, w, h = 938, 300, 240, 106
+    has = bool(track.get("title"))
+    label = "Now playing" if track.get("isPlaying") else ("Last played" if has else "Now playing")
+    title = track.get("title") if has else "Deep Work"
+    artist = track.get("artist") if has else "focus mix · while shipping"
+    bars = ""
+    for i, (a, b) in enumerate([(5, 9), (10, 4), (6, 11), (9, 5)]):
+        dur = f"{0.9 + i * 0.15:.2f}s"
+        base = y + 30
+        bars += (f'<rect x="{x + 204 + i * 5}" y="{base - a}" width="3" height="{a}" rx="1.5" fill="#6ee7b7">'
+                 f'<animate attributeName="height" values="{a};12;{b};{a}" dur="{dur}" repeatCount="indefinite"/>'
+                 f'<animate attributeName="y" values="{base - a};{base - 12};{base - b};{base - a}" dur="{dur}" repeatCount="indefinite"/></rect>')
+    inner = (panel(x, y, w, h, "#11131a", "rgba(255,255,255,0.10)", rx=14)
+             + text(x + 18, y + 28, label.upper(), "m", 11, "#1DB954", 700, spacing=1.5)
+             + bars
+             + f'<rect x="{x + 18}" y="{y + 44}" width="44" height="44" rx="8" fill="#1DB954"/>'
+             + f'<path d="M{x + 28} {y + 60}q12-4 24 2M{x + 29} {y + 67}q10-3 20 2M{x + 30} {y + 74}q8-2 16 1" '
+               f'stroke="#0b0d12" stroke-width="2.6" fill="none" stroke-linecap="round"/>'
+             + text(x + 74, y + 62, (title or "")[:22], "b", 15, "#ffffff", 700)
+             + text(x + 74, y + 82, (artist or "")[:30], "b", 12, "rgba(255,255,255,0.6)"))
+    return tilt(x, y, w, h, -2.5, inner)
+
+
+def postcard() -> str:
+    x, y, w, h = 334, 296, 290, 198
+    stripes = "".join(f'<rect x="{x + k * 12}" y="{y}" width="6" height="5" fill="{"#ef4444" if k % 2 == 0 else "#3b82f6"}"/>' for k in range(24))
+    heights = [(22, "#c5cafc"), (34, "#9aa1f6"), (18, "#fbc7e6"), (44, "#6366f1"), (26, "#b9c6ff"), (16, "#fbc7e6"),
+               (38, "#818cf8"), (24, "#c5cafc"), (30, "#9aa1f6"), (20, "#b9f4e6"), (28, "#c5cafc")]
+    sky = "".join(f'<rect x="{x + 28 + k * 17}" y="{y + 100 - hh}" width="13" height="{hh}" fill="{c}"/>' for k, (hh, c) in enumerate(heights))
+    inner = (panel(x, y, w, h, "#fbf6ea", rx=10) + stripes
+             + f'<rect x="{x + 18}" y="{y + 22}" width="208" height="80" rx="6" fill="#f1eaff"/>' + sky
+             + f'<rect x="{x + 234}" y="{y + 18}" width="40" height="52" rx="3" fill="#ffffff" stroke="#9aa0b5" stroke-dasharray="3 2"/>'
+             + text(x + 254, y + 50, "BHX", "m", 12, INK, 700, anchor="middle")
+             + text(x + 18, y + 128, "GREETINGS FROM", "m", 11, DIM, spacing=2)
+             + text(x + 18, y + 154, "Birmingham, UK", "d", 22, INK, 700)
+             + text(x + 18, y + 176, "52.48°N · open to remote & hybrid", "m", 12, MUTED))
+    return tilt(x, y, w, h, -1.5, inner)
+
+
+def stack() -> str:
+    x, y, w, h = 664, 446, 506, 132
+    rows = [("AI / ML", ["LLMs", "RAG", "PyTorch", "Vector search", "SHAP"]),
+            ("LANGUAGES", ["Python", "C# / .NET", "TypeScript", "SQL"])]
+    inner = panel(x, y, w, h, "#ffffff") + text(x + 20, y + 28, "STACK", "m", 12, DIM, 600, spacing=2)
+    for r, (label, items) in enumerate(rows):
+        yy = y + 44 + r * 42
+        inner += text(x + 20, yy + 17, label, "m", 11, "#4f46e5", 600, spacing=1.5)
+        cx = x + 118
+        for item in items:
+            cw = 18 + len(item) * 7.4
+            inner += (f'<rect x="{cx:.0f}" y="{yy}" width="{cw:.0f}" height="26" rx="7" fill="#f6f6fc" stroke="{PAPER_LINE}"/>'
+                      + text(round(cx + cw / 2), yy + 17, item, "m", 12, MUTED, anchor="middle"))
+            cx += cw + 8
+    return tilt(x, y, w, h, 1, inner)
+
+
+def cards(t: dict, prs: list[dict], counts: dict, track: dict, photo: str) -> str:
+    w, h = 1200, 610
+    blobs = "".join(
+        f'<radialGradient id="cg{i}"><stop offset="0" stop-color="{c}" stop-opacity="{t["mesh_opacity"]}"/>'
+        f'<stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>' for i, c in enumerate(t["mesh"]))
+    shadow = "#1e1b4b" if t is THEMES["light"] else "#000000"
+    body = (f'<defs>{clip(w, h)}{blobs}<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
+            f'<feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="{shadow}" flood-opacity="0.22"/></filter></defs>'
+            f'<g clip-path="url(#clip)"><ellipse cx="200" cy="140" rx="360" ry="260" fill="url(#cg0)"/>'
+            f'<ellipse cx="1050" cy="500" rx="380" ry="240" fill="url(#cg1)"/><ellipse cx="700" cy="80" rx="320" ry="200" fill="url(#cg2)"/>'
+            f'<ellipse cx="450" cy="580" rx="360" ry="200" fill="url(#cg3)"/></g>{grid(w, h, t)}'
+            f'<g clip-path="url(#clip)">{id_badge(photo)}{education()}{postcard()}{receipt(prs, counts)}{stack()}{terminal()}{music(track)}</g>')
+    return svg(w, h, body, t, "Cards from usmanmateen.com: ID badge, education, a postcard from Birmingham, the open-source "
+               "receipt, the stack, dissertation status and music.", ["Space Grotesk", "Inter", "JetBrains Mono", "Instrument Serif"])
+
+
+def spotify() -> dict:
+    """The site's own Spotify endpoint, as the Now Playing card on usmanmateen.com uses it."""
+    try:
+        with urllib.request.urlopen("https://usmanmateen.com/api/spotify", timeout=30) as resp:
+            return json.load(resp)
+    except Exception:
+        return {}
+
+
 # ── README tables ───────────────────────────────────────────────────────────
 
 LABEL = {"merged": "Merged", "queued": "In merge queue", "approved": "Approved", "review": "In review", "superseded": "Superseded"}
@@ -362,10 +565,13 @@ def main() -> None:
     counts = {s: sum(p["status"] == s for p in prs) for s in LABEL}
     counts.update(projects=len(repos), stars=sum(repos.values()), date=dt.date.today().strftime("%d %b %Y"))
 
+    track = spotify()
+    photo = "data:image/jpeg;base64," + base64.b64encode((ASSETS / "me.jpg").read_bytes()).decode()
     for name, t in THEMES.items():
         (ASSETS / f"header-{name}.svg").write_text(header(t, counts), encoding="utf-8")
         (ASSETS / f"open-source-{name}.svg").write_text(open_source(t, prs, avatars, counts), encoding="utf-8")
         (ASSETS / f"activity-{name}.svg").write_text(activity(t, cal), encoding="utf-8")
+        (ASSETS / f"cards-{name}.svg").write_text(cards(t, prs, counts, track, photo), encoding="utf-8")
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     merged = [p for p in prs if p["status"] == "merged"]

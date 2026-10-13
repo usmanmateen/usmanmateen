@@ -12,6 +12,13 @@
   <a href="https://usmanmateen.com/cv/usman-mateen-cv.pdf"><img alt="CV" src="https://img.shields.io/badge/CV-eef0ff?style=flat-square&logo=readthedocs&logoColor=4f46e5"></a>
 </p>
 
+<a href="https://usmanmateen.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards-dark.svg">
+    <img alt="Cards from usmanmateen.com: ID badge, education, a postcard from Birmingham, the open-source receipt, the stack, dissertation status and music" src="assets/cards-light.svg" width="100%">
+  </picture>
+</a>
+
 I'm a Software Developer at **Energy One**, building enterprise energy-trading (ETRM) systems in Python, C#/.NET and SQL, and I've just submitted my **MSc Applied AI** dissertation at the **University of Warwick (WMG)**: benchmarking hybrid retrieval for enterprise RAG on FinanceBench. I like systems that have to be right: migrations that can't lose a ticket, guardrails that sit in front of an LLM, and converters that have to compute exactly what PyTorch computes.
 
 ## Open source
@@ -24,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**8 merged** · 22 open or in review, across 17 projects with 527,703 combined GitHub stars.
+**8 merged** · 22 open or in review, across 17 projects with 527,705 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
