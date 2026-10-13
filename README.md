@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**8 merged** · 22 open or in review, across 17 projects with 527,705 combined GitHub stars.
+**8 merged** · 22 open or in review, across 17 projects with 527,710 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
