@@ -211,7 +211,7 @@ def header(t: dict, counts: dict) -> str:
     )
     body = (
         f"<defs>{clip(w, h)}{blobs}</defs>{mesh}{grid(w, h, t)}"
-        f'<text x="64" y="86" class="m" font-size="15" font-weight="600" letter-spacing="3" fill="{t["acc_ink"]}">AI ENGINEER · BIRMINGHAM, UK</text>'
+        f'<text x="64" y="86" class="m" font-size="15" font-weight="600" letter-spacing="3" fill="{t["acc_ink"]}">AI / AUTOMATION ENGINEER · BIRMINGHAM, UK</text>'
         f'<text x="62" y="152" class="d" font-size="58" font-weight="700" letter-spacing="-1.6" fill="{t["text"]}">Muhammad Usman Mateen</text>'
         f'<text x="64" y="200" class="s" font-size="34" fill="{t["muted"]}">I build and ship production AI and automation.</text>'
         f'<rect x="64" y="226" width="474" height="36" rx="18" fill="{t["surface"]}" stroke="{t["line"]}" stroke-width="2"/>'
