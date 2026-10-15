@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**10 merged** · 23 open or in review, across 18 projects with 592,705 combined GitHub stars.
+**13 merged** · 20 open or in review, across 18 projects with 593,089 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -42,12 +42,15 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make `suppress_stdout` redirect fd 1 instead of `sys.stdout.fileno()`](https://github.com/vllm-project/vllm/pull/59336) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(xlsx): keep CMYK pictures instead of dropping or re-rendering them](https://github.com/docling-project/docling/pull/4664) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep CMYK pictures instead of dropping them](https://github.com/docling-project/docling/pull/4666) | Merged 2026-10-08 |
+| [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep ODS pictures anchored to the sheet](https://github.com/docling-project/docling/pull/4678) | Merged 2026-10-14 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): keep CMYK JPEG figures](https://github.com/docling-project/docling/pull/4696) | Merged 2026-10-09 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): resolve \input and \includegraphics for str sources](https://github.com/docling-project/docling/pull/4697) | Merged 2026-10-09 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Return floating point from atan2 on integer inputs](https://github.com/openvinotoolkit/openvino/pull/38752) | Merged 2026-10-12 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Fix div rounding_mode="trunc" and support aten::trunc](https://github.com/openvinotoolkit/openvino/pull/38753) | Merged 2026-10-12 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Do not crash on an /Outlines reference to a free object](https://github.com/py-pdf/pypdf/pull/4177) | Merged 2026-10-13 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Read an indirect page box on a writer page](https://github.com/py-pdf/pypdf/pull/4179) | Merged 2026-10-13 |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Round floating-point floor_divide to a whole number like ATen](https://github.com/pytorch/executorch/pull/23685) | Merged 2026-10-14 |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | Merged 2026-10-14 |
 | [nolze/msoffcrypto-tool](https://github.com/nolze/msoffcrypto-tool) | [Fix is_encrypted() on an XLS stream ending in a partial record header](https://github.com/nolze/msoffcrypto-tool/pull/106) | Merged 2026-10-11 |
 <!-- merged:end -->
 
@@ -58,9 +61,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Approved |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | [Round floating-point floor_divide to a whole number like ATen](https://github.com/pytorch/executorch/pull/23685) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
-| [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep ODS pictures anchored to the sheet](https://github.com/docling-project/docling/pull/4678) | In review |
 | [keras-team/keras](https://github.com/keras-team/keras) | [Make TensorFlow floor_divide exact for float inputs](https://github.com/keras-team/keras/pull/23938) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
@@ -73,7 +74,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | In review |
