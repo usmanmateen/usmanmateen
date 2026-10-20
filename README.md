@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**14 merged** · 23 open or in review, across 19 projects with 601,715 combined GitHub stars.
+**16 merged** · 24 open or in review, across 19 projects with 602,148 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -45,6 +45,8 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep ODS pictures anchored to the sheet](https://github.com/docling-project/docling/pull/4678) | Merged 2026-10-14 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): keep CMYK JPEG figures](https://github.com/docling-project/docling/pull/4696) | Merged 2026-10-09 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): resolve \input and \includegraphics for str sources](https://github.com/docling-project/docling/pull/4697) | Merged 2026-10-09 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(email): keep non-ASCII sender and recipient names readable](https://github.com/Unstructured-IO/unstructured/pull/4543) | Merged 2026-10-19 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(xlsx): read .xls files whose Workbook stream ends in padding](https://github.com/Unstructured-IO/unstructured/pull/4545) | Merged 2026-10-19 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Return floating point from atan2 on integer inputs](https://github.com/openvinotoolkit/openvino/pull/38752) | Merged 2026-10-12 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Fix div rounding_mode="trunc" and support aten::trunc](https://github.com/openvinotoolkit/openvino/pull/38753) | Merged 2026-10-12 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Do not crash on an /Outlines reference to a free object](https://github.com/py-pdf/pypdf/pull/4177) | Merged 2026-10-13 |
@@ -62,12 +64,11 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Approved |
+| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep unsigned dtypes in bitwise shifts](https://github.com/microsoft/onnxscript/pull/3088) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [keras-team/keras](https://github.com/keras-team/keras) | [Make TensorFlow floor_divide exact for float inputs](https://github.com/keras-team/keras/pull/23938) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(email): keep non-ASCII sender and recipient names readable](https://github.com/Unstructured-IO/unstructured/pull/4543) | In review |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(xlsx): read .xls files whose Workbook stream ends in padding](https://github.com/Unstructured-IO/unstructured/pull/4545) | In review |
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [fix(mgsm): match the native exemplars' answer format in native_cot strict-match](https://github.com/EleutherAI/lm-evaluation-harness/pull/4351) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
@@ -82,8 +83,10 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep underscores inside words in MarkdownRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | In review |
-| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep unsigned dtypes in bitwise shifts](https://github.com/microsoft/onnxscript/pull/3088) | In review |
+| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
+| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep infinities in clamp with one bound](https://github.com/microsoft/onnxscript/pull/3089) | In review |
+| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Register aten::__lshift__.Tensor and aten::__rshift__.Tensor](https://github.com/microsoft/onnxscript/pull/3109) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
 <!-- open:end -->
 
