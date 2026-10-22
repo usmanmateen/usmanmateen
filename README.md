@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**19 merged** · 26 open or in review, across 20 projects with 637,672 combined GitHub stars.
+**20 merged** · 25 open or in review, across 21 projects with 679,645 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -46,6 +46,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): keep CMYK JPEG figures](https://github.com/docling-project/docling/pull/4696) | Merged 2026-10-09 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(latex): resolve \input and \includegraphics for str sources](https://github.com/docling-project/docling/pull/4697) | Merged 2026-10-09 |
 | [keras-team/keras](https://github.com/keras-team/keras) | [Make TensorFlow floor_divide exact for float inputs](https://github.com/keras-team/keras/pull/23938) | Merged 2026-10-20 |
+| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Fix model imports when torchao is older than 0.15](https://github.com/huggingface/diffusers/pull/15095) | Merged 2026-10-21 |
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(email): keep non-ASCII sender and recipient names readable](https://github.com/Unstructured-IO/unstructured/pull/4543) | Merged 2026-10-19 |
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(xlsx): read .xls files whose Workbook stream ends in padding](https://github.com/Unstructured-IO/unstructured/pull/4545) | Merged 2026-10-19 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Return floating point from atan2 on integer inputs](https://github.com/openvinotoolkit/openvino/pull/38752) | Merged 2026-10-12 |
@@ -66,11 +67,13 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
-| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Fix model imports when torchao is older than 0.15](https://github.com/huggingface/diffusers/pull/15095) | Approved |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Approved |
+| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Approved |
+| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
+| [vim/vim](https://github.com/vim/vim) | [[WIP] title to be written by the author](https://github.com/vim/vim/pull/21613) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [fix(mgsm): match the native exemplars' answer format in native_cot strict-match](https://github.com/EleutherAI/lm-evaluation-harness/pull/4351) | In review |
@@ -85,13 +88,10 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
-| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep underscores inside words in MarkdownRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep infinities in clamp with one bound](https://github.com/microsoft/onnxscript/pull/3089) | In review |
-| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Compute float floor_divide like PyTorch](https://github.com/microsoft/onnxscript/pull/3112) | In review |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Compute float remainder like PyTorch](https://github.com/microsoft/onnxscript/pull/3113) | In review |
-| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
 <!-- open:end -->
 
