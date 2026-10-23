@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**20 merged** · 25 open or in review, across 21 projects with 679,645 combined GitHub stars.
+**21 merged** · 24 open or in review, across 21 projects with 680,091 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -56,6 +56,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Round floating-point floor_divide to a whole number like ATen](https://github.com/pytorch/executorch/pull/23685) | Merged 2026-10-14 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | Merged 2026-10-14 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | Merged 2026-10-18 |
+| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Merged 2026-10-22 |
 | [nolze/msoffcrypto-tool](https://github.com/nolze/msoffcrypto-tool) | [Fix is_encrypted() on an XLS stream ending in a partial record header](https://github.com/nolze/msoffcrypto-tool/pull/106) | Merged 2026-10-11 |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep unsigned dtypes in bitwise shifts](https://github.com/microsoft/onnxscript/pull/3088) | Merged 2026-10-20 |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Register aten::__lshift__.Tensor and aten::__rshift__.Tensor](https://github.com/microsoft/onnxscript/pull/3109) | Merged 2026-10-20 |
@@ -68,7 +69,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Approved |
-| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Approved |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
