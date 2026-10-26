@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**21 merged** · 25 open or in review, across 22 projects with 695,055 combined GitHub stars.
+**21 merged** · 26 open or in review, across 23 projects with 717,803 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -75,6 +75,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [vim/vim](https://github.com/vim/vim) | [cscope match list truncates lines at embedded tabs](https://github.com/vim/vim/pull/21613) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | [Fix fp16 grouped Conv packed-weight offsets and per-group bias on arm64](https://github.com/microsoft/onnxruntime/pull/33598) | In review |
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [fix(mgsm): match the native exemplars' answer format in native_cot strict-match](https://github.com/EleutherAI/lm-evaluation-harness/pull/4351) | In review |
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager) | [Retry newOrder without replaces when the ACME server rejects it as unauthorized](https://github.com/cert-manager/cert-manager/pull/9514) | In review |
