@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**21 merged** · 26 open or in review, across 23 projects with 717,803 combined GitHub stars.
+**22 merged** · 27 open or in review, across 24 projects with 809,573 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -53,6 +53,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Fix div rounding_mode="trunc" and support aten::trunc](https://github.com/openvinotoolkit/openvino/pull/38753) | Merged 2026-10-12 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Do not crash on an /Outlines reference to a free object](https://github.com/py-pdf/pypdf/pull/4177) | Merged 2026-10-13 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Read an indirect page box on a writer page](https://github.com/py-pdf/pypdf/pull/4179) | Merged 2026-10-13 |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Merged 2026-10-26 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Round floating-point floor_divide to a whole number like ATen](https://github.com/pytorch/executorch/pull/23685) | Merged 2026-10-14 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | Merged 2026-10-14 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | Merged 2026-10-18 |
@@ -68,10 +69,9 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
-| [pytorch/executorch](https://github.com/pytorch/executorch) | [Fix sign and float64 precision of portable remainder](https://github.com/pytorch/executorch/pull/23683) | Approved |
-| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
+| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [vim/vim](https://github.com/vim/vim) | [cscope match list truncates lines at embedded tabs](https://github.com/vim/vim/pull/21613) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
@@ -88,12 +88,14 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix arrays from lists of float16 and bfloat16 vectors](https://github.com/NVIDIA/warp/pull/2105) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep float scalars exact in float64 ops in ScalarToTensorPass](https://github.com/pytorch/executorch/pull/24168) | In review |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
-| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep infinities in clamp with one bound](https://github.com/microsoft/onnxscript/pull/3089) | In review |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Compute float remainder like PyTorch](https://github.com/microsoft/onnxscript/pull/3113) | In review |
+| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
 <!-- open:end -->
 
