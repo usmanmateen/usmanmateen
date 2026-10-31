@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**26 merged** · 25 open or in review, across 26 projects with 1,026,041 combined GitHub stars.
+**26 merged** · 25 open or in review, across 26 projects with 1,026,431 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -74,6 +74,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | [Fix adjust_saturation turning pixels gray when the hue rounds to 1.0](https://github.com/tensorflow/tensorflow/pull/129606) | Approved |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
 | [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | In review |
@@ -92,7 +93,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix arrays from lists of float16 and bfloat16 vectors](https://github.com/NVIDIA/warp/pull/2105) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
