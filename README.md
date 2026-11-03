@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**26 merged** · 25 open or in review, across 25 projects with 986,121 combined GitHub stars.
+**27 merged** · 26 open or in review, across 26 projects with 997,837 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -65,6 +65,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep unsigned dtypes in bitwise shifts](https://github.com/microsoft/onnxscript/pull/3088) | Merged 2026-10-20 |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Register aten::__lshift__.Tensor and aten::__rshift__.Tensor](https://github.com/microsoft/onnxscript/pull/3109) | Merged 2026-10-20 |
 | [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [Keep float64 precision of Python floats in scalar_tensor](https://github.com/microsoft/onnxscript/pull/3114) | Merged 2026-10-28 |
+| [microsoft/onnxscript](https://github.com/microsoft/onnxscript) | [[torchlib] Keep float64 precision in log2 and log10](https://github.com/microsoft/onnxscript/pull/3151) | Merged 2026-11-03 |
 <!-- merged:end -->
 
 <details>
@@ -86,6 +87,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Clip F to I conversion to the INT32 range](https://github.com/python-pillow/Pillow/pull/10373) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
+| [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | In review |
