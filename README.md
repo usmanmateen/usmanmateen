@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**27 merged** · 26 open or in review, across 26 projects with 997,837 combined GitHub stars.
+**28 merged** · 25 open or in review, across 26 projects with 998,269 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -59,6 +59,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Round floating-point floor_divide to a whole number like ATen](https://github.com/pytorch/executorch/pull/23685) | Merged 2026-10-14 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | Merged 2026-10-14 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep float scalars exact in float64 ops in ScalarToTensorPass](https://github.com/pytorch/executorch/pull/24168) | Merged 2026-10-29 |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | Merged 2026-11-03 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | Merged 2026-10-18 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Merged 2026-10-22 |
 | [nolze/msoffcrypto-tool](https://github.com/nolze/msoffcrypto-tool) | [Fix is_encrypted() on an XLS stream ending in a partial record header](https://github.com/nolze/msoffcrypto-tool/pull/106) | Merged 2026-10-11 |
@@ -75,7 +76,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | [Fix adjust_saturation turning pixels gray when the hue rounds to 1.0](https://github.com/tensorflow/tensorflow/pull/129606) | Approved |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | Approved |
+| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
 | [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | In review |
@@ -89,7 +90,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
 | [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
-| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | In review |
 | [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix CPU erfinv and erfcinv precision](https://github.com/NVIDIA/warp/pull/2103) | In review |
 | [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix arrays from lists of float16 and bfloat16 vectors](https://github.com/NVIDIA/warp/pull/2105) | In review |
