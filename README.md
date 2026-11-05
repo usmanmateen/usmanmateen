@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**28 merged** · 25 open or in review, across 26 projects with 998,269 combined GitHub stars.
+**28 merged** · 24 open or in review, across 25 projects with 797,435 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -75,7 +75,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
-| [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | [Fix adjust_saturation turning pixels gray when the hue rounds to 1.0](https://github.com/tensorflow/tensorflow/pull/129606) | Approved |
+| [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Clip F to I conversion to the INT32 range](https://github.com/python-pillow/Pillow/pull/10373) | Approved |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
@@ -85,7 +85,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [fix(mgsm): match the native exemplars' answer format in native_cot strict-match](https://github.com/EleutherAI/lm-evaluation-harness/pull/4351) | In review |
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager) | [Retry newOrder without replaces when the ACME server rejects it as unauthorized](https://github.com/cert-manager/cert-manager/pull/9514) | In review |
-| [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Clip F to I conversion to the INT32 range](https://github.com/python-pillow/Pillow/pull/10373) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
 | [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
