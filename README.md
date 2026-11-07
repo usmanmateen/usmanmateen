@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**28 merged** · 24 open or in review, across 25 projects with 797,435 combined GitHub stars.
+**29 merged** · 23 open or in review, across 25 projects with 798,137 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -51,6 +51,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(email): keep non-ASCII sender and recipient names readable](https://github.com/Unstructured-IO/unstructured/pull/4543) | Merged 2026-10-19 |
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | [fix(xlsx): read .xls files whose Workbook stream ends in padding](https://github.com/Unstructured-IO/unstructured/pull/4545) | Merged 2026-10-19 |
 | [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Convert F to I;16 modes without clipping to 255](https://github.com/python-pillow/Pillow/pull/10349) | Merged 2026-10-29 |
+| [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Clip F to I conversion to the INT32 range](https://github.com/python-pillow/Pillow/pull/10373) | Merged 2026-11-06 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Return floating point from atan2 on integer inputs](https://github.com/openvinotoolkit/openvino/pull/38752) | Merged 2026-10-12 |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Fix div rounding_mode="trunc" and support aten::trunc](https://github.com/openvinotoolkit/openvino/pull/38753) | Merged 2026-10-12 |
 | [py-pdf/pypdf](https://github.com/py-pdf/pypdf) | [BUG: Do not crash on an /Outlines reference to a free object](https://github.com/py-pdf/pypdf/pull/4177) | Merged 2026-10-13 |
@@ -75,10 +76,9 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
-| [python-pillow/Pillow](https://github.com/python-pillow/Pillow) | [Clip F to I conversion to the INT32 range](https://github.com/python-pillow/Pillow/pull/10373) | Approved |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make LOG2E a constexpr in the DeepEncoder attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Test] Add a test for the DeepEncoder rel-pos attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
 | [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
