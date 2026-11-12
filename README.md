@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**29 merged** · 23 open or in review, across 25 projects with 799,641 combined GitHub stars.
+**29 merged** · 22 open or in review, across 25 projects with 800,043 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -91,7 +91,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | In review |
 | [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix CPU erfinv and erfcinv precision](https://github.com/NVIDIA/warp/pull/2103) | In review |
-| [NVIDIA/warp](https://github.com/NVIDIA/warp) | [Fix arrays from lists of float16 and bfloat16 vectors](https://github.com/NVIDIA/warp/pull/2105) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): true division of integer tensors truncates for int64 and scalar divisors](https://github.com/pytorch/TensorRT/pull/4850) | In review |
