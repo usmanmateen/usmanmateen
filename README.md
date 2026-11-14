@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**29 merged** · 22 open or in review, across 25 projects with 800,043 combined GitHub stars.
+**30 merged** · 22 open or in review, across 25 projects with 800,662 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -40,6 +40,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make `suppress_stdout` redirect fd 1 instead of `sys.stdout.fileno()`](https://github.com/vllm-project/vllm/pull/59336) | Merged 2026-10-08 |
+| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | Merged 2026-11-13 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(xlsx): keep CMYK pictures instead of dropping or re-rendering them](https://github.com/docling-project/docling/pull/4664) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep CMYK pictures instead of dropping them](https://github.com/docling-project/docling/pull/4666) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep ODS pictures anchored to the sheet](https://github.com/docling-project/docling/pull/4678) | Merged 2026-10-14 |
@@ -76,10 +77,10 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
+| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax (5.x) 🤖🤖🤖](https://github.com/opencv/opencv/pull/30816) | Approved |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Test] Add a test for the DeepEncoder rel-pos attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
-| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
