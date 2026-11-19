@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**26 merged** · 21 open or in review, across 23 projects with 773,612 combined GitHub stars.
+**28 merged** · 19 open or in review, across 23 projects with 774,495 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -42,6 +42,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix] Make `suppress_stdout` redirect fd 1 instead of `sys.stdout.fileno()`](https://github.com/vllm-project/vllm/pull/59336) | Merged 2026-10-08 |
 | [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax 🤖🤖🤖](https://github.com/opencv/opencv/pull/30545) | Merged 2026-11-13 |
 | [opencv/opencv](https://github.com/opencv/opencv) | [dnn: compute LogSoftmax without taking the log of softmax (5.x) 🤖🤖🤖](https://github.com/opencv/opencv/pull/30816) | Merged 2026-11-15 |
+| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: read count_include_pad in the ONNX AveragePool importer 🤖🤖🤖](https://github.com/opencv/opencv/pull/30842) | Merged 2026-11-19 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(xlsx): keep CMYK pictures instead of dropping or re-rendering them](https://github.com/docling-project/docling/pull/4664) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep CMYK pictures instead of dropping them](https://github.com/docling-project/docling/pull/4666) | Merged 2026-10-08 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(odf): keep ODS pictures anchored to the sheet](https://github.com/docling-project/docling/pull/4678) | Merged 2026-10-14 |
@@ -64,6 +65,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | Merged 2026-11-03 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | Merged 2026-10-18 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Merged 2026-10-22 |
+| [opencv/opencv_extra](https://github.com/opencv/opencv_extra) | [dnn: add an ONNX AveragePool model exported with count_include_pad=False 🤖🤖🤖](https://github.com/opencv/opencv_extra/pull/1466) | Merged 2026-11-19 |
 | [nolze/msoffcrypto-tool](https://github.com/nolze/msoffcrypto-tool) | [Fix is_encrypted() on an XLS stream ending in a partial record header](https://github.com/nolze/msoffcrypto-tool/pull/106) | Merged 2026-10-11 |
 <!-- merged:end -->
 
@@ -73,7 +75,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 <!-- open:start -->
 | Project | Pull request | Status |
 |---|---|---|
-| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: read count_include_pad in the ONNX AveragePool importer 🤖🤖🤖](https://github.com/opencv/opencv/pull/30842) | Approved |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Test] Add a test for the DeepEncoder rel-pos attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
@@ -84,16 +85,15 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager) | [Retry newOrder without replaces when the ACME server rejects it as unauthorized](https://github.com/cert-manager/cert-manager/pull/9514) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
-| [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | In review |
+| [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [test(converters): cover integer true division and run the shadowed div tests](https://github.com/pytorch/TensorRT/pull/4850) | In review |
 | [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
-| [opencv/opencv_extra](https://github.com/opencv/opencv_extra) | [dnn: add an ONNX AveragePool model exported with count_include_pad=False 🤖🤖🤖](https://github.com/opencv/opencv_extra/pull/1466) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
 <!-- open:end -->
 
