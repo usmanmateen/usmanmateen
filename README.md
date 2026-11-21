@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**28 merged** · 19 open or in review, across 23 projects with 775,139 combined GitHub stars.
+**28 merged** · 19 open or in review, across 23 projects with 775,632 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -76,6 +76,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | Project | Pull request | Status |
 |---|---|---|
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[CPU] Make f32 Mod and FloorMod exact](https://github.com/openvinotoolkit/openvino/pull/38931) | Approved |
+| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Test] Add a test for the DeepEncoder rel-pos attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
@@ -86,7 +87,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
-| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | In review |
 | [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
