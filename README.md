@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**28 merged** · 19 open or in review, across 23 projects with 777,579 combined GitHub stars.
+**30 merged** · 17 open or in review, across 23 projects with 778,808 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -63,6 +63,8 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Support double in optimized log_softmax](https://github.com/pytorch/executorch/pull/23686) | Merged 2026-10-14 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep float scalars exact in float64 ops in ScalarToTensorPass](https://github.com/pytorch/executorch/pull/24168) | Merged 2026-10-29 |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Keep int64 precision in portable div trunc mode and fmod](https://github.com/pytorch/executorch/pull/24170) | Merged 2026-11-03 |
+| [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [test(converters): cover integer true division and run the shadowed div tests](https://github.com/pytorch/TensorRT/pull/4850) | Merged 2026-11-25 |
+| [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | Merged 2026-11-25 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): drop whitespace tokens from the Chinese word splitter](https://github.com/NVIDIA-NeMo/Curator/pull/2492) | Merged 2026-10-18 |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [feat(text): let MarkdownRemover take custom Markdown patterns](https://github.com/NVIDIA-NeMo/Curator/pull/2495) | Merged 2026-10-22 |
 | [opencv/opencv_extra](https://github.com/opencv/opencv_extra) | [dnn: add an ONNX AveragePool model exported with count_include_pad=False 🤖🤖🤖](https://github.com/opencv/opencv_extra/pull/1466) | Merged 2026-11-19 |
@@ -90,8 +92,6 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
 | [apple/coremltools](https://github.com/apple/coremltools) | [Match scalar constants to fp16 inputs in log2, log10, expm1, asinh, acosh, hardtanh and atan2](https://github.com/apple/coremltools/pull/2894) | In review |
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
-| [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [test(converters): cover integer true division and run the shadowed div tests](https://github.com/pytorch/TensorRT/pull/4850) | In review |
-| [pytorch/TensorRT](https://github.com/pytorch/TensorRT) | [fix(converters): fmod returns the wrong sign when the float quotient rounds up](https://github.com/pytorch/TensorRT/pull/4861) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
