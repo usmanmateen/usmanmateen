@@ -31,7 +31,7 @@ I'm a Software Developer at **Energy One**, building enterprise energy-trading (
 I fix bugs I can reproduce, one pull request per bug, each with a minimal repro and a test that fails before the fix. Most of them come from comparing a converter or runtime against eager PyTorch on edge values (NaN, infinities, −0.0, integer overflow), or from feeding real documents to parsers.
 
 <!-- counts:start -->
-**30 merged** · 17 open or in review, across 23 projects with 778,808 combined GitHub stars.
+**30 merged** · 20 open or in review, across 24 projects with 792,069 combined GitHub stars.
 <!-- counts:end -->
 
 **Merged**
@@ -81,12 +81,14 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[TF FE] Keep FloorDiv and TruncateDiv exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38946) | Approved |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | [fix: prefer cp1252 when the charset detector ties](https://github.com/microsoft/markitdown/pull/2679) | In review |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Test] Add a test for the DeepEncoder rel-pos attention kernel](https://github.com/vllm-project/vllm/pull/62858) | In review |
+| [opencv/opencv](https://github.com/opencv/opencv) | [dnn: include the dilation in SAME padding for convolutions 🤖🤖🤖](https://github.com/opencv/opencv/pull/31196) | In review |
 | [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | [Keep single-rank barrier() free of torch's device_id warning](https://github.com/deepspeedai/DeepSpeed/pull/8779) | In review |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | [fix(dspy): encode MPO photos as JPEG in dspy.Image](https://github.com/stanfordnlp/dspy/pull/10595) | In review |
 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | [fix: avoid KeyError in DSTrace.get_sibling_exps for a node with several children](https://github.com/microsoft/RD-Agent/pull/1514) | In review |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [fix(mgsm): match the native exemplars' answer format in native_cot strict-match](https://github.com/EleutherAI/lm-evaluation-harness/pull/4351) | In review |
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager) | [Retry newOrder without replaces when the ACME server rejects it as unauthorized](https://github.com/cert-manager/cert-manager/pull/9514) | In review |
 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | [[PT FE] Keep floor_divide exact for whole quotients](https://github.com/openvinotoolkit/openvino/pull/38833) | In review |
+| [cupy/cupy](https://github.com/cupy/cupy) | [Fix parzen windows whose (M - 1) / 4 is an integer](https://github.com/cupy/cupy/pull/10514) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): keep the quotes out of quoted URL spans](https://github.com/data-privacy-stack/presidio/pull/2338) | In review |
 | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | [fix(analyzer): include the port and path of URLs with an explicit port](https://github.com/data-privacy-stack/presidio/pull/2340) | In review |
 | [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs) | [New package: UsmanMateen.Untrail version 1.1.4](https://github.com/microsoft/winget-pkgs/pull/468859) | In review |
@@ -94,6 +96,7 @@ I fix bugs I can reproduce, one pull request per bug, each with a minimal repro 
 | [pytorch/executorch](https://github.com/pytorch/executorch) | [Decompose aten.var_mean.correction in to_edge](https://github.com/pytorch/executorch/pull/23681) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): count hash characters, not runs, in SymbolsToWordsFilter](https://github.com/NVIDIA-NeMo/Curator/pull/2519) | In review |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | [fix(text): keep punctuation that follows a URL in UrlRemover](https://github.com/NVIDIA-NeMo/Curator/pull/2520) | In review |
+| [opencv/opencv_extra](https://github.com/opencv/opencv_extra) | [dnn: ONNX Conv models with auto_pad SAME_UPPER and dilation 🤖🤖🤖](https://github.com/opencv/opencv_extra/pull/1481) | In review |
 | [docling-project/docling](https://github.com/docling-project/docling) | [fix(html): keep CMYK images and skip undecodable ones instead of failing](https://github.com/docling-project/docling/pull/4681) | Superseded · Superseded by #4683, which has the same fix plus MHTML support. |
 <!-- open:end -->
 
